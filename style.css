@@ -64,6 +64,9 @@ h2{
     color:white;
 
 }
+
+/*============================= ROUND style ==============================*/
+
 .ROUND{
     background:rgb(229, 222, 219);
     padding:15px;
@@ -99,16 +102,16 @@ h2{
     height: 60px;
 }
 .btn{
-    width:160px;
+    width:162px;
     margin:10px;
     border:transparent;
     border-radius:8px;
-    box-shadow:0 0 10px grey;
+    box-shadow:0 0 8px grey;
     display: flex;
     justify-content: center;
     align-items: center;
     
-    color:grey;
+    color:rgb(139, 133, 133);
 }
 /*============================= SVG style ==============================*/
 
