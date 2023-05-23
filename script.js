@@ -1,12 +1,12 @@
-//=========== Déclaration des Varialbes ===========\\
-// let images =[
-//     "dice-1.png",
-//     "dice-2.png",
-//     "dice-3.png",
-//     "dice-4.png",
-//     "dice-5.png",
-//     "dice-6.png"
-// ];
+//========================= Déclaration des Varialbes ===========================\\
+ let images =[
+     "dice-1.png",
+     "dice-2.png",
+     "dice-3.png",
+     "dice-4.png",
+     "dice-5.png",
+     "dice-6.png"
+ ];
 
 let scores, 
     roundScore,
@@ -14,7 +14,7 @@ let scores,
     gamePlaying ;
 
 
-    //========================= déclaration des fonctions =========================
+    //========================= déclaration des fonctions =========================\\
     init();
     function init() {
         scores = [0, 0];
@@ -29,7 +29,7 @@ let scores,
         document.getElementById("rollBtn").disabled= false;    
         document.getElementById("holdBtn").disabled= false;     
     }
-    //=========================== rollDice function building ======================
+    //=========================== rollDice function building ======================\\
 
     function rollDice() {
         if (gamePlaying) {
@@ -46,7 +46,7 @@ let scores,
         }
     }
 
-        //=========================== hold function building ========================
+        //=============================== hold function  =============================\\
         function hold() {
             if (gamePlaying) {
                 scores[activePlayer] += roundScore;
@@ -65,9 +65,18 @@ let scores,
                 }
             }
         }
-    
+            //=========================== Next Player function ========================\\
+
         function nextPlayer() {
             roundScore = 0;
             document.getElementById("player" + (activePlayer + 1) + "Round").textContent = "0";
             activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
          }
+
+             //=========================== Reset Game function ========================\\
+
+         function resetGame() {
+            init();
+            document.getElementById("player1").style.backgroundColor = "#f5f5f5";
+            document.getElementById("player2").style.backgroundColor = "#f5f5f5";
+         };

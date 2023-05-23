@@ -15,7 +15,7 @@ body{
 
 /*=========================== player-box style ============================*/
 .player-box{
-    width:700px;
+    width:auto;
     padding:50px;
     position:absolute;
     transform:translate(-50%, -50%);
@@ -34,6 +34,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: transparent;
 }
 
 /*================================= H2 style ================================*/
@@ -41,6 +42,12 @@ h2{
     color:grey;
     text-shadow: 10px 10px 10px black;
     font-size: 16px;
+}
+
+/*============================== Paragraph style ==============--=============*/
+.Rubik{
+    text-shadow:10px 10px 15px rgb(5, 223, 5);
+
 }
 
 /*============================= P:GLOBAL style ==============================*/
@@ -76,6 +83,7 @@ h2{
     border:2px solid red;
     box-shadow:0 0 10px rgb(220, 6, 6);
     border-radius: 8px;
+    z-index: 50;
     width:60px;
     height: 60px;
     background:linear-gradient(45deg, rgb(194, 113, 113), rgb(237, 237, 203),rgb(198, 118, 118));
