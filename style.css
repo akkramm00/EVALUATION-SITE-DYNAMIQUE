@@ -1,0 +1,125 @@
+/*============================== page style ===============================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*============================== body style ===============================*/
+body{
+    height: 100vh;
+    background: linear-gradient(green,rgb(187,240, 187))0 100% no-repeat;
+    background-size: 100% 50%;
+}
+
+/*=========================== player-box style ============================*/
+.player-box{
+    width:700px;
+    padding:50px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    background:white;
+    box-shadow:0 20px 40px rgba(11, 9, 9, 0.2);
+    border-radius: 10px;
+}
+
+/*============================= player style ==============================*/
+.player{
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*================================= H2 style ================================*/
+h2{
+    color:grey;
+    text-shadow: 10px 10px 10px black;
+    font-size: 16px;
+}
+
+/*============================= P:GLOBAL style ==============================*/
+.GLOBAL{
+    background:rgb(220, 83, 37);
+    padding:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgb(31, 28, 28);
+    color:white;
+
+}
+.ROUND{
+    background:rgb(229, 222, 219);
+    padding:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgb(31, 28, 28);
+    color:rgb(246, 102, 102);
+  
+}
+
+/*============================= IMAGE style ==============================*/
+.img{
+    border:2px solid red;
+    box-shadow:0 0 10px rgb(220, 6, 6);
+    border-radius: 8px;
+    width:60px;
+    height: 60px;
+    background:linear-gradient(45deg, rgb(194, 113, 113), rgb(237, 237, 203),rgb(198, 118, 118));
+
+}
+
+/*============================= buttons style ==============================*/
+#button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+.btn{
+    width:160px;
+    margin:10px;
+    border:transparent;
+    border-radius:8px;
+    box-shadow:0 0 10px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color:grey;
+}
+/*============================= SVG style ==============================*/
+
+svg{
+    margin-right:10px;
+    color:rgb(240, 117, 117);
+}
+/*================ shake class create/animationstyle ===================*/
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+    transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform:rotate(8deg)
+    }
+}
